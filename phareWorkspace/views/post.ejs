@@ -1,0 +1,26 @@
+<!--按行按列显示传入的posts的所有内容-->
+
+    <% posts.forEach(function(post, index){//遍历posts内容，每行显示三个
+    if(index % 3 == 0){ %>
+    <div class="row">
+        <% } %>
+        <div class="photo-box">
+            <span><a href='/u/<%= post.user %>'><%= post.user %></a></span>
+            <span class="float-right color-gray"><%= post.time %></span>
+            <div class="box-pic">
+                <img src="images/21969938.jpg">
+                <span class="cnt-badge">10</span>
+            </div>
+            <hr>
+            <h3>安徽宏村</h3>
+            <div class="box-content">
+                <%= post.post %>
+            </div>
+        </div>
+        <% if(index % 3 == 2){ %>
+    </div>
+    <% } %>
+    <% }); %>
+    <% if(posts.length % 3 != 0){ %>
+</div>
+<% } %>

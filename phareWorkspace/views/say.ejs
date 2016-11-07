@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<%- include header %>
+<body>
+<%- include nav %>
+    <form method="post" action="/post" class="well form-inline center" style="text-align:
+center;">
+
+        <input type="text" class="span8" name="post">
+        <button type="submit" class="btn btn-success"><i class="icon-comment icon-white">
+        </i> 发言</button>
+
+        <textarea id="editor" placeholder="Balabala" autofocus></textarea>
+
+        <script>
+
+        var editor = new Simditor({
+        textarea: $('#editor'),
+        //optional options
+        toolbar: ['title','bold','italic','underline','strikethrough','fontScale','color', 'ol' ,'ul', 'blockquote','table', 'link','image','hr','indent','outdent','alignment'],
+        imageButton: ['upload','external'],
+        upload: { url: '',params: null,fileKey: 'upload_file',connectionCount: 3, leaveConfirm: 'Uploading is in progress, are you sure to leave this page?'}
+
+        });
+
+        </script>
+
+    </form>
+</body>
+</html>
+
+
+

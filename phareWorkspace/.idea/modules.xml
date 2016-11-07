@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/phareWorkspace.iml" filepath="$PROJECT_DIR$/.idea/phareWorkspace.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/pharews.iml" filepath="$PROJECT_DIR$/.idea/pharews.iml" />
     </modules>
   </component>
 </project>
